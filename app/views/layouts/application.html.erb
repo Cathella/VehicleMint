@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>VehicleMint</title>
+    <meta charset="UTF-8">
+    <title>VehicleMint - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +15,74 @@
   </head>
 
   <body>
+    <header class="position-relative">
+      <div class="container">
+        <!-- This Is a First nav -->
+        <div class="nav-one">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand logo " href="index.html">
+              <img src="./img/logo.jpg" alt="" class="img-fluid">
+              <!-- Vehicle<b>Maint</b> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#secoundnavbar" aria-controls="secoundnavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+          </nav>
+        </div>
+
+        <!-- This is a Soucand nav -->
+        <div class="nav-tow">
+          <nav class="navbar navbar-expand-lg py-0">
+            <div class="collapse navbar-collapse p-1" id="secoundnavbar">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item pr-3">
+                      <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="vehicles.html">Vehicles For Sale</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="history.html">History Update</a>
+                </li>
+                <li class="nav-item px-3">
+                <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <button class="position-absolute live-chat py-1 px-2 tr-3s"><i class="fas fa-headset mr-2"></i> Live Chat</button>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- This Is a Latest News nav -->
+      <div class="nav-news py-1">
+        <div class="container">
+          <p class="p-1 m-0">
+            <b>Latest News:</b>
+            <span class="pl-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum amet deleniti harum.</span>
+          </p>
+        </div>
+      </div>
+    </header>
+
     <%= yield %>
+
+    <footer>
+      <div class="container">
+        <div class="copyright">
+            <p class="m-0">Copyright 2020</p>
+            <p class=" m-0">Design By <b> Abdulrahman</b></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jQuery v3.5.1.js" ></script>
+    <script src="js/popper.js" ></script>
+    <script src="js/bootstrap.min.js" ></script>
+    <script src="fonts/fontawesome/js/all.min.js" ></script>
+    <script src="js/main.js" ></script>
   </body>
 </html>
