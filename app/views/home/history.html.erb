@@ -1,0 +1,180 @@
+<div class="modal fade" id="addHistory" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+
+      <div class="modal-body text-center">
+        <div class="register-title ">
+          <h5 class="font-weight-bold">Vehicle Services</h5>
+        </div>
+        <form action="" class="">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Services title (eg:Front Brake)">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Machanic Name">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="09:38 Am 09-17-2020">
+          </div>
+          <div class="form-group">
+            <input type="file" class="form-control">
+          </div>
+          <div class="form-group">
+            <textarea name="" id="" rows="5" class="w-100" placeholder="Type Thing"></textarea>
+          </div>  
+          <button class="tr-3s  btn font-weight-bold">Save History</button>    
+        </form>
+      </div>  
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="sale" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      
+      <div class="modal-body text-center">
+        <div class="register-title ">
+          <h5 class="font-weight-bold">New Owner</h5>
+        </div>
+        <form action="" class="">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="New Owner Name">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="New Owner Email">
+          </div>
+          <div class="form-group">
+            <input type="number" class="form-control" placeholder="+20">
+          </div>
+          <button class="tr-3s  btn font-weight-bold">Save Owner</button>      
+        </form>
+      </div> 
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="recipt" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+
+      <div class="modal-body text-center">
+        <div class="register-title ">
+          <h5 class="font-weight-bold">Add Recipt</h5>
+          <p>For VehicleMeint</p>
+        </div>
+        <form action="" class="">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Services Title (eg:Front Brake)">
+          </div>
+          <div class="form-group">
+            <input type="file" class="form-control">
+          </div>
+          <button class="tr-3s  btn font-weight-bold">Save Recipt</button> 
+        </form>
+      </div>  
+    </div>
+  </div>
+</div>
+
+<section class="ve-history">
+  <div class="container">
+    <div class="card ">
+      <div class="card-header rounded-0">
+        <div class="vehicle-title font-weight-bold float-left pt-1">dd3</div>         
+        <div class="float-right">
+          <button type="button" class=" btn btn-light py-1 add-more font-weight-bold" data-toggle="modal" data-target="#recipt">
+            Add Recipt
+          </button>
+          <button type="button" class=" btn btn-light py-1 add-more font-weight-bold" data-toggle="modal" data-target="#sale">
+            Sale
+          </button>
+          <button type="button" class=" btn btn-light py-1 add-more font-weight-bold" data-toggle="modal" data-target="#addHistory">
+            <i class="fas fa-plus-circle"></i> Add History
+          </button>
+        </div>
+      </div>
+      <div class="card-body  py-3 px-4">
+        <div class="vehicle-details">
+          <div class="row">
+            <div class="col-md-3 col-12">
+              <div class="vehicle-img p-3">
+                <%= image_tag("image.jpg", :alt => "", class: "img-fluid") %>
+              </div>
+            </div>
+            <div class="col-md-9 col-12">
+              <div class="details p-3">
+                <div class="chasis d-flex">
+                  <div class="w-50">
+                    <i class="fas fa-user mr-3"></i> 
+                    <a href="">Chasis :</a> 
+                  </div>
+                  <div>
+                    <span>123</span>
+                  </div>           
+                </div>
+                <div class="title d-flex">
+                  <div class="w-50">
+                    <i class="fas fa-user mr-3"></i> 
+                    <a href="">Vehicle Title :</a> 
+                  </div>
+                  <div>
+                    <span>dd3</span>
+                  </div>
+                </div>
+                <div class="car-model d-flex">
+                  <div class="w-50">
+                    <i class="fas fa-user mr-3"></i> 
+                    <a href="vehicle-history.html">Car Model :</a>  
+                  </div>
+                  <div>
+                    <span>123</span>
+                  </div>
+                </div>
+                <div class="ehicle-mant d-flex">
+                  <div class="w-50">
+                    <i class="fas fa-user mr-3"></i> 
+                    <a href="">Vehicle Mant :</a> 
+                  </div>
+                  <div>
+                    <span>0000-00-00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="assign py-3">
+          <div class="card">
+            <div class="card-header font-weight-bold">
+              Assign Privalages To Mechanics
+            </div>
+            <div class="card-body">
+              <form action="">
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="rahil">
+                  <label class="form-check-label" for="rahil">Rahil ( Rahil Rapir shop )</label>
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="saqp">
+                  <label class="form-check-label" for="saqib">Saqib ( Imogambo )</label>
+                </div>
+                <button type="submit" class="btn btn-primary tr-3s">Save Settings</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
