@@ -1,15 +1,350 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import "he-fo.css"; /* This A File Has A Header And Footer CSS Code */
+@import "responseiv.css";
+*{box-sizing: border-box;}
+:root {--pop-color: #a7d432;}/* old color #df1e32*/
+:root {--header-color:#1346a1 ;}/* old color #323e41*/
+:root {--text-color: #fff;}/* old color #eee*/
+:root {--lite-color:#1f3e10;}/* old color #cae0ed*/
+body{margin: 0; padding: 0; font-family: 'Raleway', sans-serif; font-weight: ;}
+section{padding: 40px 0; position: relative;}
+a:hover{text-decoration: none;}
+button:focus{outline: 0;}
+textarea:focus{border:0 !important;}
+.tr-3s{transition: all .3s; }
+.form-control:focus{box-shadow: unset; outline: 0;}
+/********************************************************************************/
+
+/*************************** Home Page *****************************/
+/************ Start Heistory And Login Section ****************/
+.hist-login{
+    background-color: var(--text-color);
+}
+.hist-login .parent{min-height: 330px;}
+.hist-login .history{
+    background-color: var(--header-color);
+    border-radius: 20px 0 0 20px;
+}
+.hist-login .history h1{color:var(--text-color);}
+.hist-login .history h1 span{color:var(--lite-color);}
+.hist-login .history p{color:var(--text-color); font-size: 13px;}
+.hist-login form input{font-size:15px; border:0;}
+.hist-login  form button{
+     border-radius: 3px;
+     padding: 5px 25px;
+    }
+    .hist-login form button:hover{
+        padding: 5px 30px;
+    }
+    .hist-login .history form button{background-color: var(--pop-color);}
+    .hist-login .login form button{background-color: var(--header-color); color:var(--text-color)}
+
+.hist-login .login{
+    background-color: var(--pop-color);
+}
+.hist-login .login,.hist-login .login a{color:var(--text-color); font-weight:bold;}
+.hist-login .login .form-check-label,.hist-login .login a{font-size:14px;}
+.hist-login .login a:hover{color:var(--header-color);}
+
+/***********************Start what-we-do Section********************/
+.what-we-do h3{
+    font-weight: bold;
+}
+.what-we-do h3 span{
+    background-color: var(--header-color);
+    color:var(--text-color);
+}
+.what-we-do .wwd-discription p{font-size:14px;}
+
+/************************* Start Services Section ******************/
+.services figure{
+    background-color:var(--pop-color);
+}
+.services figure:hover{box-shadow: 2px 2px 10px 0px #ccc;}
+.services figure:hover .serv-icon{
+    transform: rotate(360deg);
+}
+.services figure .serv-icon{
+    font-size: 50px;
+
+}
+.services figure figcaption p{font-size: 13px;}
+
+/************************************************** Start Register page *************************/
+.register{
+    height: 685px;
+    background-image: url("../img/Car-Repairs.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translate(0px);
+
+}
+.register::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#000c;
+    z-index: -1;
+}
+.register .register-container{
+    width: 40%;
+    background-color: var(--header-color);
+    padding: 50px;
+}
+.register .register-container .register-title,.modal .register-title{
+    color: var(--text-color);
+}
+.register .register-container form .form-group,.modal form .form-group{border: 6px solid #5179c1;}
+.register .register-container form input,.modal form input{border-radius: 0;}
+.register .register-container form input[type = file],.modal form input[type = file]{
+    background-color: var(--header-color);
+    color:var(--text-color);
+}
+.register .register-container  form button,.modal form button{
+    color: var(--text-color);
+     background-color: var(--pop-color);
+     border-radius: 3px;
+     padding: 5px 25px;
+
+    }
+.register .register-container form button:hover,.modal form button:hover{
+    padding: 5px 30px;
+}
+
+
+
+/*****************************Contact Us Page**********************************/
+
+
+.contact-us .contact{
+    width: 90%;
+    margin: 0 auto;
+    background: #fafafa;
+    border-radius: 10px;
+}
+.contact-us .contact .contact-details {
+    background-color: var(--pop-color);
+    border-radius: 10px 0 0 10px;
+    min-height: 100%;
+}
+.contact-us .contact .contact-details .contact-title h5 {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.contact-us .contact .contact-details .contact-items .item .con-icon{
+    font-size: 25px;
+    color: var(--text-color);
+    
+}
+.contact-us .contact .contact-details .contact-items .item p{
+    font-size: 15px;
+    color: var(--text-color);
+}
+.contact-us .contact .contact-details .social-icons a{
+    font-size: 25px;
+    color:var(--text-color);
+    transition: .5s;
+}
+.contact-us .contact .contact-details .social-icons a:hover{color: var(--header-color);}
+
+
+
+
+.contact-us .contact .contact-form form label{
+    font-size: 13px;
+    margin: 0;
+    font-weight: bold;
+}
+.contact-us .contact .contact-form form .form-control{
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 13px;
+    font-weight: 100;
+    background-color: #fafafa;
+    padding-left: 2px;
+    border-radius:0;
+}
+.contact-us .contact .contact-form form textarea.form-control{
+    border: 1px solid #ccc;
+}
+.contact-us .contact .contact-form form .form-control:focus{
+    box-shadow: none;
+    border-color: var(--pop-color);
+}
+.contact-us .contact .contact-form form button{
+    background-color: var(--pop-color);
+    border: 1px solid var(--pop-color);
+    border-radius: 0;
+    transition: .5s;
+}
+.contact-us .contact .contact-form form button:hover{
+    background-color: #fafafa;
+    color: var(--pop-color);
+
+}
+
+
+/*************************** Profile Page ***********************/
+.veh-profile .card{
+    background-color:var(--header-color);
+    border:0;
+    color: var(--text-color);
+    border-radius: 5px 5px 0 0;
+}
+.veh-profile .card .card-header{
+    background-color:var(--pop-color);
+    
+    font-weight: bold;
+}
+.veh-profile .card .profile-details .user-details div {
+    font-size: 13px;
+    padding: 10px 0;
+}
+
+.veh-profile .card .profile-details .user-details div span:nth-of-type(2) {
+    color:var(--pop-color);
+    font-size: 15px;
+    padding-left: 30px;
+}
+.user-profile .card{
+    border:0;
+    color:var(--text-color);
+    background-color: #ccc;
+}
+.user-profile .card .card-header{
+    background-color: #395992;  
+}
+/* .vehicle-history */
+.user-profile .vehicle-img img,.ve-history img{
+    min-height: 160px;
+    box-shadow: 0px 0px 25px 0px #888;
+    border: 3px solid;
+}
+.user-profile .vehicle-history,.ve-history{
+    border: 1px solid var(--header-color);
+}
+.user-profile .vehicle-history .card-header{
+    background-color: var(--header-color); 
+}
+.user-profile .vehicle-history .details,.ve-history .details{
+    background-color: var(--header-color); 
+}
+.user-profile .vehicle-history .details div,.ve-history .details div{ padding: 5px 0;}
+.user-profile .vehicle-history .details  a, .ve-history .details a{
+    font-size: 13px;
+    color: var(--text-color);
+}
+.user-profile .vehicle-history .details  a:hover,
+.ve-history .details a:hover{color:var(--pop-color)}
+
+.user-profile .vehicle-history .details div span, .ve-history .details div span {
+    color:var(--pop-color);
+    font-size: 15px;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+/*************** Modal Syle *************/
+.modal .modal-content{
+    top: 100px;
+    background-color: var(--header-color);
+    padding: 50px;
+}
+.modal .modal-content button.close{
+    width: 30px;
+    background: #3a3a3a;
+    border-radius: 50%;
+    height: 30px;
+    /* float: right; */
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: #fff;
+    z-index: 3333;
+}
+
+/************************************* vehicle history Page **************************/
+.ve-history .card{color:var(--text-color);}
+.ve-history .card-header{background-color: var(--pop-color);}
+
+.ve-history .assign .card-body{background-color: var(--header-color);}
+.ve-history .assign .card-body form button{
+    background-color: var(--pop-color);
+    border: 1px solid var(--pop-color);
+}
+
+.ve-history .assign .card-body form button:hover{
+    background-color: unset;
+    color: var(--text-color);
+
+}
+
+
+/* 
+This Page Has A Header And Footer Style
+*/
+
+
+/* ****** Start Header Style ****** */
+header{
+    background-color: var(--header-color);
+    /* height: 100px; */
+}
+header .logo{
+   overflow: hidden;
+}
+header .logo img{
+    max-height: 90px;
+}
+/* nav-one */
+header .nav-one nav{
+    background-color: var(--pop-color);
+    border-radius: 0 0 35px 35px;
+    max-height: 60px;
+}
+/* nav-tow */
+header .nav-tow nav ul a{
+    color:var(--text-color);
+    font-size: 14px;
+    /* font-weight:500; */
+    transition: color .3s;
+}
+header .nav-tow nav ul a:hover{color: var(--pop-color);}
+header .nav-tow nav ul a.active{color: var(--pop-color);}
+header .nav-tow nav ul .live-chat{
+    right: 0;
+    top: 15%;
+    background: unset;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    margin: auto;
+    font-size: 14px;
+}
+header .nav-tow nav ul .live-chat:hover{
+    border-color: var(--pop-color);
+    color: var(--pop-color);
+}
+/* nav-news */
+header .nav-news{
+    background: linear-gradient(180deg, rgb(138 138 138) 0%, rgba(19,40,43,1) 100%);
+}
+header .nav-news p{
+color : var(--text-color);
+font-size: 14px;
+}
+header .nav-news p span{
+    font-size: 13px;
+}
+
+
+/**************** Start Footer Style ******************/
+footer{background-color: var(--header-color); padding: 20px 0;}
+footer .copyright{
+    display: flex;
+    justify-content: space-between;
+}
+footer .copyright p{ color:var(--text-color); font-size:14px;}

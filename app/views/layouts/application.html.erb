@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>VehicleMint - Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -21,7 +22,7 @@
         <div class="nav-one">
           <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand logo " href="index.html">
-              <img src="./img/logo.jpg" alt="" class="img-fluid">
+              <%= image_tag("logo.jpg", :alt => "", class: "img-fluid") %>
               <!-- Vehicle<b>Maint</b> -->
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#secoundnavbar" aria-controls="secoundnavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,10 +80,12 @@
       </div>
     </footer>
 
-    <script src="js/jQuery v3.5.1.js" ></script>
-    <script src="js/popper.js" ></script>
-    <script src="js/bootstrap.min.js" ></script>
-    <script src="fonts/fontawesome/js/all.min.js" ></script>
-    <script src="js/main.js" ></script>
+    <script
+      src="https://kit.fontawesome.com/7290f27402.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
